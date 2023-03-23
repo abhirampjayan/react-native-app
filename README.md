@@ -11,4 +11,4 @@ At present its not an amazing project. But that doesn't mean it can't be amazing
 * [LinkedIn](https://linkedin.com/in/abhirampjayan)
 * [Instagram](https://instagram.com/abhirampjayan)
 
-## Coded with 💚 [Abhriam P Jayan](https://abhirampjayan.com/)
+Coded with 💚 [Abhriam P Jayan](https://abhirampjayan.com/)
