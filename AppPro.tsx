@@ -8,6 +8,7 @@ import {
   ScrollView,
   // StatusBar,
 } from 'react-native';
+import ActionCard from './components/ActionCard';
 import FancyCard from './components/FancyCard';
 import FlatCard from './components/FlatCard';
 
@@ -19,6 +20,7 @@ function AppPro(): JSX.Element {
         <ScrollView>
           <FlatCard />
           <FancyCard />
+          <ActionCard />
         </ScrollView>
       </SafeAreaView>
     </View>
