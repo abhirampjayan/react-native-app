@@ -5,8 +5,10 @@ import {
   useColorScheme,
   StyleSheet,
   SafeAreaView,
+  ScrollView,
   // StatusBar,
 } from 'react-native';
+import FancyCard from './components/FancyCard';
 import FlatCard from './components/FlatCard';
 
 function AppPro(): JSX.Element {
@@ -14,7 +16,10 @@ function AppPro(): JSX.Element {
   return (
     <View style={!isDarkMode ? styles.container_dark : styles.container_light}>
       <SafeAreaView>
-        <FlatCard />
+        <ScrollView>
+          <FlatCard />
+          <FancyCard />
+        </ScrollView>
       </SafeAreaView>
     </View>
   );
