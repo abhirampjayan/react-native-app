@@ -1,27 +1,20 @@
 import React from 'react';
 
 import {
-  Text,
   View,
   useColorScheme,
   StyleSheet,
   SafeAreaView,
-  StatusBar,
+  // StatusBar,
 } from 'react-native';
+import FlatCard from './components/FlatCard';
 
 function AppPro(): JSX.Element {
   const isDarkMode = useColorScheme() === 'dark';
   return (
     <View style={!isDarkMode ? styles.container_dark : styles.container_light}>
       <SafeAreaView>
-        <StatusBar
-          animated={true}
-          backgroundColor="#00cccc"
-          barStyle={'light-content'}
-        />
-        <View style={styles.logo}>
-          <Text style={styles.text}>ZET!</Text>
-        </View>
+        <FlatCard />
       </SafeAreaView>
     </View>
   );
@@ -30,7 +23,6 @@ function AppPro(): JSX.Element {
 const styles = StyleSheet.create({
   container_dark: {
     flex: 1,
-    alignItems: 'center',
     backgroundColor: '#1c1c1c',
   },
   container_light: {
@@ -48,6 +40,9 @@ const styles = StyleSheet.create({
     paddingHorizontal: 8,
     paddingVertical: 4,
     borderRadius: 8,
+  },
+  brand: {
+    justifyContent: 'center',
   },
 });
 export default AppPro;
